@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const path = require('path');
 
-import {config} from "./_config";
+const config = require ('./_config');
 // Define routes
 let index = require('./routes/index');
 let image = require('./routes/image');
