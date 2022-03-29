@@ -50,7 +50,7 @@ pipeline {
       steps {
         sh 'echo Deploying to Heroku...'
         withCredentials([usernameColonPassword(credentialsId: 'heroku', variable: 'HEROKU_CREDENTIALS' )]){
-            sh 'git push https://${HEROKU_CREDENTIALS}@git.heroku.com/darkroom-gallery.git master'
+            sh 'git push https://${HEROKU_CREDENTIALS}@git.heroku.com/darkrm-gallery.git master'
         }
       }
     }
