@@ -17,7 +17,7 @@ pipeline {
 
         EMAIL_SUBJECT_FAILURE =  "Status: 'FAILURE' -Job \'${env.JOB_NAME}:${env.BUILD_NUMBER}\'"
 
-        EMAIL_RECEPIENT = '2ad1c0acfd-e28b3a@inbox.mailtrap.io'
+        EMAIL_RECEPIENT = 'bomettreuben@gmail.com'
 
     }
 
@@ -92,7 +92,7 @@ def notifyBuild(String buildStatus = 'STARTED') {
   if (buildStatus == 'STARTED') {
     color = 'YELLOW'
     colorCode = '#FFFF00'
-    summary = "${subject} :aaw_yeah: (${env.BUILD_URL})"
+    summary = "${subject} :Send mail: (${env.BUILD_URL})"
   } else if (buildStatus == 'SUCCESSFUL') {
     color = 'GREEN'
     colorCode = '#00FF00'
