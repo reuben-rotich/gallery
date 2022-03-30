@@ -21,7 +21,7 @@ pipeline {
 
     }
 
-  tools {node "node"}
+  tools {nodejs "node"}
 
   stages {
     stage('clone repository') {
